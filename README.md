@@ -1,4 +1,4 @@
-# Week 2 Practical 1 - CSS Fundamentals
+# Practical 3 (Week 2) - CSS Fundamentals
 
 This practical is all about getting you started with CSS to add style to your HTML documents. 
 
