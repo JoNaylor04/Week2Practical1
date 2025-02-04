@@ -1,21 +1,17 @@
-# Practical 3 (Week 2) - CSS Fundamentals
+# Week 2 Practical 1 - CSS Fundamentals
 
-This practical is all about getting you started with CSS to add style to your HTML documents. 
+This practical is all about getting you started with CSS to add style to your HTML documents. These activities will likely take you more than an hour. Aim to finish them outside of class.
 
-## Stage 1: CSS Selector Familiarisation
-Play [CSS Diner](https://flukeout.github.io/). This game will introduce you to some selectors we didn’t cover in class. Try to complete as many levels as you can, but you can stop after level 16 if you get frustrated! 
-
-_Aim to spend no more than 30 minutes on this task!_
-
-## Stage 2: Writing Internal Styles
+## Stage 1: Writing Internal Styles
 The three exercises in this stage walk you through a few useful text styling approaches and a few less commonly used CSS properties. You will need the HTML files available in this repository.
-Open the three files (exercise2_1.html, exercise2_2.html, exercise 2_3.html) in VS Code. You will notice that each file is identical. Your task is to add internal CSS to each file to produce the expected output.
+Open the three files (exercise1_1.html, exercise1_2.html, exercise 1_3.html) in VS Code. You will notice that each file is identical. Your task is to add internal CSS to each file to produce the expected output.
 
 For each exercise, you will need to add `<style></style>` elements inside the `<head>` of the HTML file, then add your CSS inside the `<style>` elements. **You must only write code inside the `<style>` elements—do not modify the rest of the HTML in any way. **
 
 Links to relevant documentation are provided in places. Keep the CSS documentation (either MDN or W3Schools, or both) handy as you work. You can also try typing properties straight into VS Code and exploring the auto-complete suggestions.
-### Exercise 2.1: Styling with pseudo selectors
-Style exercise2_1.html so it looks a bit like an old book, as pictured below. Links to the relevant properties and additional guidance is provided after the screenshot. 
+
+### Exercise 1.1: Styling with pseudo selectors
+Style exercise1_1.html so it looks a bit like an old book, as pictured below. Links to the relevant properties and additional guidance is provided after the screenshot. 
 
 ![Screenshot of the final result for Ex2.1](https://github.com/IM-WADD/Week2Practical1/assets/5978932/a19d39b8-2265-41a0-aed9-f2f6dbace3ee)
 
@@ -42,9 +38,9 @@ _**Step-by-step guidance**_
 - `padding` (to create more space between the letter and its border)
 - [border](https://css-tricks.com/almanac/properties/b/border/) (using “double” style and a thicker weight than default)
 
-### Exercise 2.2: Creating hover effects
+### Exercise 1.2: Creating hover effects
 A key principle of interaction design that you should already be familiar with is _feedback_ for user interaction. If an element is interactive, the UI should provide hints that the user can interact with it. In web design, clickable elements often have hover effects—style changes that appear when the user’s mouse is over the element. This is achieved using the [:hover](https://www.w3schools.com/cssref/sel_hover.php) selector, which is commonly used for links but can be applied to other elements as well.
-Style exercise2_2.html as follows.
+Style exercise1_2.html as follows.
 
 ![Image example for Ex2.2](https://github.com/IM-WADD/Week2Practical1/assets/5978932/6149cb4e-10d6-4829-b479-795053f85dbe)
 
@@ -60,10 +56,8 @@ Finally, add hover effects to the paragraph elements. When the mouse is over a p
 
 ![Image example for on hover of paragraph](https://github.com/IM-WADD/Week2Practical1/assets/5978932/888e4ba9-cf0e-4bad-a68a-06e2fd1cf262)
 
-View your completed file in the Chrome device simulator using a simulated touch screen device like an iPhone. What do you notice about the hover effects? Why might this be?
-
-### Exercise 2.3: A few more text styling properties
-Give exercise2_3.html some basic styling along the same lines as before: add some spacing around the content for readability and choose a font family for the text. 
+### Exercise 1.3: A few more text styling properties
+Give exercise1_3.html some basic styling along the same lines as before: add some spacing around the content for readability and choose a font family for the text. 
 
 Next, [change the orientation](https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation) of the heading to match the screenshot:
 
@@ -80,8 +74,8 @@ You may have noticed that your mouse cursor changes when it is over different ty
 
 **Interaction design note:** It is usually best to stick with the default cursor provided by the browser as it is already designed to communicate functionality and making changes may cause confusion for the user. However, in the coming weeks, we’ll see use cases for changing the cursor to improve communication of functionality.
 
-## Stage 3: Using External CSS
-In this stage, you will create an external stylesheet for the portfolio you started last practical and begin to add basic styling for your site. In the previous stage, you wrote internal CSS. This was appropriate for the stage 2 exercises because there were relatively few styles in each page and the styles only applied to the individual HTML page. When styling a whole website, external stylesheets are recommended as you can reuse styles across pages. External styles also help to separate content and structure from visual styling.
+## Stage 2: Using External CSS
+In this stage, you will create an external stylesheet for the portfolio you started last practical and begin to add basic styling for your site. In the previous stage, you wrote internal CSS. This was appropriate for the stage 1 exercises because there were relatively few styles in each page and the styles only applied to the individual HTML page. When styling a whole website, external stylesheets are recommended as you can reuse styles across pages. External styles also help to separate content and structure from visual styling.
 
 In VS Code, open the folder containing your portfolio site. Create a new file called styles.css. Link the new CSS file to each of your pages by adding the following line to the `<head>` section of each HTML file:
 ```<link href=”styles.css” type=”text/css” rel=”stylesheet”>```
