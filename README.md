@@ -39,25 +39,31 @@ _**Step-by-step guidance**_
 - [border](https://css-tricks.com/almanac/properties/b/border/) (using “double” style and a thicker weight than default)
 
 ### Exercise 1.2: Creating hover effects
-A key principle of interaction design that you should already be familiar with is _feedback_ for user interaction. If an element is interactive, the UI should provide hints that the user can interact with it. In web design, clickable elements often have hover effects—style changes that appear when the user’s mouse is over the element. This is achieved using the [:hover](https://www.w3schools.com/cssref/sel_hover.php) selector, which is commonly used for links but can be applied to other elements as well.
+A key principle of interaction design that you should already be familiar with is _feedback_ for user interaction. If an element is interactive, the UI should provide hints that the user can interact with it. 
+
+In web design, clickable elements often have hover effects—style changes that appear when the user’s mouse is over the element. This is achieved using the [:hover](https://www.w3schools.com/cssref/sel_hover.php) selector, which is commonly used for links but can be applied to other elements as well.
 Style exercise1_2.html as follows.
 
 ![Image example for Ex2.2](https://github.com/IM-WADD/Week2Practical1/assets/5978932/6149cb4e-10d6-4829-b479-795053f85dbe)
 
-Add spacing around the content for readability and choose a font for all text. 
-
-Give the heading element a background colour and set the text colour to something that clearly contrasts with the background colour. Use the `border-bottom` property to create a solid line in a different colour to the background. Use `padding` to add spacing around the content of the heading so that the text is not bunched up against the edge of the heading background colour. You may find that the text, "Chapter 1", now looks indented compared to the following paragraphs. A handy trick to correct this effect and keep all text aligned is to use negative values for `margin-left` and `margin-right` on your heading element. The value should be the same as the `padding` value, but negative e.g. if you set `padding` to 12px, set `margin-left` and `margin-right` to -12px. 
-
-Next, add a hover effect to the heading element using a new selector, `h1:hover`, to declare style rules to be applied only when the mouse is over the heading. When the heading is hovered, change its text and border colour.
+- Add spacing around the content for readability and choose a font for all text.
+- Give the heading element a background colour and set the text colour to something that clearly contrasts with the background colour.
+- Use the `border-bottom` property to create a solid line in a different colour to the background.
+- Use `padding` to add spacing around the content of the heading so that the text is not bunched up against the edge of the heading background colour. You may find that the text, "Chapter 1", now looks indented compared to the following paragraphs. A handy trick to correct this effect and keep all text aligned is to use negative values for `margin-left` and `margin-right` on your heading element. The value should be the same as the `padding` value, but negative e.g. if you set `padding` to 12px, set `margin-left` and `margin-right` to -12px.
+- Next, add a hover effect to the heading element using a new selector, `h1:hover`, to declare style rules to be applied only when the mouse is over the heading. When the heading is hovered, change its text and border colour.
 
 ![Image example for hover on title](https://github.com/IM-WADD/Week2Practical1/assets/5978932/fdb31348-6987-4adf-8306-9861a798d16b)
 
-Finally, add hover effects to the paragraph elements. When the mouse is over a paragraph, change its colour and use the [text-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform) property to convert it to uppercase text. Make the paragraph appear to shift 5 pixels right and down. You can achieve this in a few different ways...
+Finally, add hover effects to the paragraph elements: 
+- When the mouse is over a paragraph, change its colour and use the [text-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform) property to convert it to uppercase text.
+- Make the paragraph appear to shift 5 pixels right and down. You can achieve this in a few different ways...
 
 ![Image example for on hover of paragraph](https://github.com/IM-WADD/Week2Practical1/assets/5978932/888e4ba9-cf0e-4bad-a68a-06e2fd1cf262)
 
 ### Exercise 1.3: A few more text styling properties
-Give exercise1_3.html some basic styling along the same lines as before: add some spacing around the content for readability and choose a font family for the text. 
+Give exercise1_3.html some basic styling along the same lines as before:
+- add some spacing around the content for readability
+- and choose a font family for the text. 
 
 Next, [change the orientation](https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation) of the heading to match the screenshot:
 
@@ -65,12 +71,14 @@ Next, [change the orientation](https://developer.mozilla.org/en-US/docs/Web/CSS/
 
 Notice that a few sentences have been highlighted (black background, white text). The sentences have been selected by the user. By default, browsers allow users to select text elements so that text can be copied or highlighted. The browser will also provide default styling to highlight a text selection (generally a light blue background). Customise the text selection style using the [::selection](https://developer.mozilla.org/en-US/docs/Web/CSS/::selection) pseudo-selector.
 
-You may have noticed that your mouse cursor changes when it is over different types of content on the web. For example, it will often change to a text selection cursor when over text, and a pointer (the little hand) when over something clickable like a link or a button. Some of these changes are provided by default by your browser to communicate the functionality of different elements. You can also control these changes using CSS. Add the appropriate selectors to create new style rules to be applied when a paragraph or heading is hovered. Then, use the [cursor](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor) property to explore different cursors. In particular, try the following values:
-- pointer
-- wait
-- help
-- not-allowed
-- text
+You may have noticed that your mouse cursor changes when it is over different types of content on the web. For example, it will often change to a text selection cursor when over text, and a pointer (the little hand) when over something clickable like a link or a button. Some of these changes are provided by default by your browser to communicate the functionality of different elements. You can also control these changes using CSS:
+- Add the appropriate selectors to create new style rules to be applied when a paragraph or heading is hovered.
+- Then, use the [cursor](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor) property to explore different cursors. In particular, try the following values:
+  - pointer
+  - wait
+  - help
+  - not-allowed
+  - text
 
 **Interaction design note:** It is usually best to stick with the default cursor provided by the browser as it is already designed to communicate functionality and making changes may cause confusion for the user. However, in the coming weeks, we’ll see use cases for changing the cursor to improve communication of functionality.
 
